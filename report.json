@@ -1,0 +1,231 @@
+{
+  "config": {
+    "configFile": "C:\\Ascendionplaywright\\playwright.config.js",
+    "rootDir": "C:/Ascendionplaywright/tests/spec",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "report.json"
+        }
+      ],
+      [
+        "C:\\Ascendionplaywright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Ascendionplaywright/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Ascendionplaywright/tests/spec",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "products.test.js",
+      "file": "products.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Automation Exercise - Products Page Tests",
+          "file": "products.test.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Search for a product",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6290,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Found 9 products\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-09T05:07:20.638Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d99a9a8387d9f4c1a568-e943887e4cb87929f505",
+              "file": "products.test.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "Add first product to cart and go to cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 20797,
+                      "error": {
+                        "message": "TimeoutError: page.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href=\"/view_cart\"]')\u001b[22m\n\u001b[2m    - locator resolved to 2 elements. Proceeding with the first one: <a href=\"/view_cart\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"cartModal\" class=\"modal show\">…</div> from <section>…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"cartModal\" class=\"modal show\">…</div> from <section>…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div id=\"cartModal\" class=\"modal show\">…</div> from <section>…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <iframe vspace=\"0\" hspace=\"0\" width=\"1005\" height=\"124\" tabindex=\"0\" id=\"aswift_3\" scrolling=\"no\" name=\"aswift_3\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" browsingtopics=\"true\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!4\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CI7eg8L0yo8DFdmrZgIdQJ83dw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scrip…></iframe> from <ins data-ad-status=\"filled\" data-adsbygoogle-status=\"done\" data-anchor-status=\"ready-to-display\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: page.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href=\"/view_cart\"]')\u001b[22m\n\u001b[2m    - locator resolved to 2 elements. Proceeding with the first one: <a href=\"/view_cart\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"cartModal\" class=\"modal show\">…</div> from <section>…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"cartModal\" class=\"modal show\">…</div> from <section>…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div id=\"cartModal\" class=\"modal show\">…</div> from <section>…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <iframe vspace=\"0\" hspace=\"0\" width=\"1005\" height=\"124\" tabindex=\"0\" id=\"aswift_3\" scrolling=\"no\" name=\"aswift_3\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" browsingtopics=\"true\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!4\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CI7eg8L0yo8DFdmrZgIdQJ83dw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scrip…></iframe> from <ins data-ad-status=\"filled\" data-adsbygoogle-status=\"done\" data-anchor-status=\"ready-to-display\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n    at ProductsPage.goToCart (C:\\Ascendionplaywright\\tests\\pages\\ProductsPage.js:33:21)\n    at C:\\Ascendionplaywright\\tests\\spec\\products.test.js:23:24",
+                        "location": {
+                          "file": "C:\\Ascendionplaywright\\tests\\pages\\ProductsPage.js",
+                          "column": 21,
+                          "line": 33
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\ProductsPage.js:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m  \n \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m goToCart() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcartButton)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m   }\n \u001b[90m 35 |\u001b[39m }\n \u001b[90m 36 |\u001b[39m  \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Ascendionplaywright\\tests\\pages\\ProductsPage.js",
+                            "column": 21,
+                            "line": 33
+                          },
+                          "message": "TimeoutError: page.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href=\"/view_cart\"]')\u001b[22m\n\u001b[2m    - locator resolved to 2 elements. Proceeding with the first one: <a href=\"/view_cart\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"cartModal\" class=\"modal show\">…</div> from <section>…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"cartModal\" class=\"modal show\">…</div> from <section>…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div id=\"cartModal\" class=\"modal show\">…</div> from <section>…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <iframe vspace=\"0\" hspace=\"0\" width=\"1005\" height=\"124\" tabindex=\"0\" id=\"aswift_3\" scrolling=\"no\" name=\"aswift_3\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" browsingtopics=\"true\" title=\"Advertisement\" allowtransparency=\"true\" data-load-complete=\"true\" aria-label=\"Advertisement\" data-google-container-id=\"a!4\" allow=\"attribution-reporting; run-ad-auction\" data-google-query-id=\"CI7eg8L0yo8DFdmrZgIdQJ83dw\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scrip…></iframe> from <ins data-ad-status=\"filled\" data-adsbygoogle-status=\"done\" data-anchor-status=\"ready-to-display\" class=\"adsbygoogle adsbygoogle-noablate\">…</ins> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ProductsPage.js:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m  \n \u001b[90m 32 |\u001b[39m   \u001b[36masync\u001b[39m goToCart() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcartButton)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m   }\n \u001b[90m 35 |\u001b[39m }\n \u001b[90m 36 |\u001b[39m  \u001b[0m\n\u001b[2m    at ProductsPage.goToCart (C:\\Ascendionplaywright\\tests\\pages\\ProductsPage.js:33:21)\u001b[22m\n\u001b[2m    at C:\\Ascendionplaywright\\tests\\spec\\products.test.js:23:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-09T05:07:28.247Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Ascendionplaywright\\test-results\\products-Automation-Exerci-f7a89-duct-to-cart-and-go-to-cart\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Ascendionplaywright\\test-results\\products-Automation-Exerci-f7a89-duct-to-cart-and-go-to-cart\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Ascendionplaywright\\test-results\\products-Automation-Exerci-f7a89-duct-to-cart-and-go-to-cart\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Ascendionplaywright\\test-results\\products-Automation-Exerci-f7a89-duct-to-cart-and-go-to-cart\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Ascendionplaywright\\tests\\pages\\ProductsPage.js",
+                        "column": 21,
+                        "line": 33
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7253,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-09-09T05:07:51.769Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "d99a9a8387d9f4c1a568-98388c15db9d7fbce30a",
+              "file": "products.test.js",
+              "line": 20,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-09T05:07:18.857Z",
+    "duration": 42342.118,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 1
+  }
+}

@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","31074","test","chromium","Mon Sep 08 17:25:18 IST 2025","passed","Mon Sep 08 17:25:50 IST 2025","","005_mouse-actions.spec.js","",""
+"","73139","test","firefox","Mon Sep 08 17:25:19 IST 2025","passed","Mon Sep 08 17:26:32 IST 2025","","005_mouse-actions.spec.js","",""
+"","38770","test","webkit","Mon Sep 08 17:25:51 IST 2025","passed","Mon Sep 08 17:26:30 IST 2025","","005_mouse-actions.spec.js","",""
