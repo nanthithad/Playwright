@@ -1,5 +1,5 @@
 const { test } = require('@playwright/test');
-const { LoginPage } = require('../pages/loginpage.js');
+const { LoginPage } = require('../pages/LoginPage.js');
 test.describe('OrangeHRM Login Scenarios', () => {
  test('should successfully log in with valid credentials', async ({ page}) => {
  const loginPage = new LoginPage(page);
